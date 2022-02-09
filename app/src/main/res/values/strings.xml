@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">P1PG1</string>
+    <string name="btn_Agregar">Agregar</string>
+    <string name="btn_Pasar">Segunda Actividad</string>
+    <string name="txt_Ver">Ver</string>
+    <string name="txt_Nombres">Nombres</string>
+    <string name="txt_Apellidos">Apellidos</string>
+    <string name="txt_Correo">Correo</string>
+    <string name="txt_Edad">Edad</string>
+
+    <string name="txt_N">Nombres</string>
+    <string name="txt_Ape">Apellidos</string>
+    <string name="txt_Corr">Correo</string>
+    <string name="txt_Ed">Edad</string>
+    <string name="txt_Buscar">Buscar</string>
+    <string name="btn_Buscar">Buscar boton</string>
+</resources>
