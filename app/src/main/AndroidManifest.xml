@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.p1pg1">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -9,12 +17,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.P1PG1">
-        <!--<activity
-            android:name=".ActivityCombo"
-            android:exported="false" />-->
         <!-- <activity
+             android:name=".ActivityFoto"
+             android:exported="false" />-->
+         <!--
+         <activity
+             android:name=".ActivityCombo"
+             android:exported="false" />
+         -->
+        <!--
+ <activity
             android:name=".ActivityEditar"
-            android:exported="false" />-->
+            android:exported="false" />
+        -->
         <!--
           <activity
              android:name=".ActivityListView"
@@ -33,7 +48,7 @@
         <!-- android:name=".MainActivity2" -->
         <!-- android:exported="false" /> -->
         <activity
-            android:name=".ActivityCombo"
+            android:name=".ActivityListView"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,5 +57,24 @@
             </intent-filter>
         </activity>
     </application>
+
+    <queries>
+        <!-- Browser -->
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="http" />
+        </intent>
+
+        <!-- Camera -->
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+
+        <!-- Gallery -->
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT" />
+        </intent>
+    </queries>
+
 
 </manifest>
